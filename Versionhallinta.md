@@ -3,7 +3,7 @@
 
 | Versio | Päivämäärä | Muokkaaja | Muutokset | Kommentit |
 |--------|------------|----------:|----------|-----------|
-| 1.0 | 30.10.2025 | Jonas Christiansen | Alkuperäinen versio | Git repo luotu |
+| 1.0 | 1.11.2025 | Jonas Christiansen | Alkuperäinen versio | + Git repo luotu |
 
 
 ---

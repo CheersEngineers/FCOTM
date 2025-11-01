@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FCOTM Turnauspalvelu">
+    <meta name="description" content="Ylläpitäjän hallinta">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ylläpitäjän hallinta</title>
+    <link rel="icon" type="image/x-icon" href="kuvat/favicon.png"> <!-- Tämä on pieni ikoni urlin kirjanmerkissä -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <nav class="main-nav" aria-label="Päävalikko">
+                <ul class="nav-list" id="primary-nav">
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="joukkueen-ilmoittautuminen.html">Joukkueen ilmoittautaminen</a></li>
+                    <li><a href="turnauksen-ilmoittautuminen.html">Turnauksen ilmoittautaminen</a></li>
+                    <li><a href="admin.html">Ylläpitäjän hallinta</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        </div>
+    </header>
+
+    <main class="container main-grid">
+        <section class="content">
+            <section class="card">
+                <h2>Ylläpitäjän hallinta</h2>
+                <p>Toiminnot testitilassa. Toimeksiannot vaikuttavat vain demo-dataan.</p>
+
+                <div class="admin-actions">
+                    <button class="btn" data-action="add">Lisää turnaus</button>
+                    <button class="btn" data-action="remove">Poista turnaus</button>
+                    <button class="btn" data-action="remove-team">Poista joukkue</button>
+                    <button class="btn" data-action="remove-player">Poista pelaaja</button>
+                </div>
+
+                <div id="adminLog" class="results" style="margin-top:12px">Toiminnot näkyvät täällä.</div>
+            </section>
+        </section>
+
+        <aside class="sidebar">
+            <div class="side-block">
+                <h3>Ylläpidon muistio</h3>
+                <p class="muted">Käytä tätä näkymää vastuullisesti. Poistot on mahdollista peruuttaa vain
+                    varmuuskopiosta.</p>
+            </div>
+
+            <div class="side-block">
+                <h3>API-status</h3>
+                <p class="muted">API: OK (demo)</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© 2025 Turnauspalvelu</div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

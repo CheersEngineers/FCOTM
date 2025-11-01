@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="FCOTM Turnauspalvelu">
+    <meta name="description" content="Suomen Turnauspalvelu - Etusivu">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FCOTM — Etusivu</title>
+    <link rel="icon" type="image/x-icon" href="kuvat/favicon.png"> <!-- Tämä on pieni ikoni urlin kirjanmerkissä -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <nav class="main-nav" aria-label="Päävalikko">
+                <ul class="nav-list" id="primary-nav">
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="joukkueen-ilmoittautuminen.html">Joukkueen ilmoittautaminen</a></li>
+                    <li><a href="turnauksen-ilmoittautuminen.html">Turnauksen ilmoittautaminen</a></li>
+                    <li><a href="admin.html">Ylläpitäjän hallinta</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        </div>
+    </header>
+
+    <main class="container main-grid">
+        <aside class="sidebar">
+            <div class="side-block">
+                <h3>Suodattimet</h3>
+                <label>Aikaväli
+                    <input id="filter-date" type="text" placeholder="1.4–1.6" />
+                </label>
+                <label>Maakunta
+                    <select id="filter-region">
+                        <option>Kaikki</option>
+                        <option>Uusimaa</option>
+                        <option>Pohjois-Savo</option>
+                    </select>
+                </label>
+                <label>Ikäluokka
+                    <input id="filter-age" type="text" placeholder="U12, U14..." />
+                </label>
+            </div>
+
+            <div class="side-block">
+                <h3>Ilmoitukset</h3>
+                <p class="muted">Huom: lisää turnauslomakkeeseen tapahtuman sijainti ja ikäluokka.</p>
+            </div>
+
+            <div class="side-block social">
+                <h3>Seuraa</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <section class="hero card">
+                <h1>Turnauspalvelu</h1>
+                <p>Etsi ja lisää jalkapalloturnauksia helposti — suodata aikavälillä, maakunnan ja ikäluokan mukaan.</p>
+            </section>
+
+            <section class="cards-grid">
+                <article class="card">
+                    <h3>Hakutulokset</h3>
+                    <input id="searchInput" class="search" placeholder="Hae turnauksia..." />
+                    <div id="searchResults" class="results">Hakutulokset näkyvät tässä.</div>
+                </article>
+
+                <article class="card">
+                    <h3>Kalenteri</h3>
+                    <div class="placeholder">Kalenterikomponentti / näkymä</div>
+                </article>
+
+                <article class="card">
+                    <h3>Ilmoittautumiset</h3>
+                    <p>Linkit seurojen omiin lomakkeisiin tai fallback-ilmoittautuminen.</p>
+                    <a class="btn" href="turnauksen-ilmoittautuminen.html">Lisää turnaus</a>
+                </article>
+            </section>
+
+            <section class="card form-card">
+                <h3>Lisää oma turnaus (esimerkki)</h3>
+                <form id="tournamentForm" action="#" method="post">
+                    <label for="title">Turnauksen nimi</label>
+                    <input id="title" name="title" required />
+
+                    <label for="date">Päivämäärä</label>
+                    <input id="date" name="date" type="text" placeholder="1.6–2.6" />
+
+                    <label for="region">Maakunta</label>
+                    <select id="region" name="region">
+                        <option>Valitse</option>
+                        <option>Uusimaa</option>
+                    </select>
+
+                    <label for="age">Ikäluokka</label>
+                    <input id="age" name="age" placeholder="U12, U14" />
+
+                    <label for="externalLink">Seuran oma ilmoittautumislinkki</label>
+                    <input id="externalLink" name="externalLink" type="url" placeholder="https://seura.fi/ilmo" />
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="consent" required /> Hyväksyn tietojen käsittelyn
+                    </label>
+
+                    <div class="form-actions">
+                        <button class="btn primary" type="submit">Tallenna</button>
+                        <button class="btn ghost" type="reset">Tyhjennä</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© 2025 FCOTM Turnauspalvelu</div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
