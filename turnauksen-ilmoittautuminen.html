@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Turnauksen ilmoittautuminen">
-    <meta name="description" content="Turnauksen ilmoittautuminen">
+    <meta name="author" content="FCOTM Turnauspalvelu">
+    <meta name="description" content="Turnauksen ilmoittautuminen"> <!-- Sivun kuvaus hakukoneille -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Turnauksen ilmoittautuminen</title>
+    <title>Turnauksen ilmoittautuminen</title> <!-- Sivun otsikko, näkyy selaimen välilehdessä -->
     <link rel="icon" type="image/x-icon" href="kuvat/favicon.png"> <!-- Tämä on pieni ikoni urlin kirjanmerkissä -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" /> <!-- Ulkoinen CSS-tiedosto tyyleille -->
 </head>
 
 <body>
     <header class="site-header">
         <div class="container header-inner">
+            <!-- Päävalikko alkaa tästä -->
             <nav class="main-nav" aria-label="Päävalikko">
                 <ul class="nav-list" id="primary-nav">
                     <li><a href="index.html">Etusivu</a></li>
@@ -27,11 +28,13 @@
         </div>
     </header>
 
+    <!-- Pääsisältöalue alkaa tästä -->
     <main class="container single-column">
         <section class="card form-card">
             <h2>Turnauksen ilmoittautuminen / lisää turnaus</h2>
             <p>Täytä tapahtuman tiedot — voit antaa myös seuran oman ilmoittautumislinkin.</p>
 
+            <!-- Ilmoittautumislomake alkaa tästä -->
             <form id="tournForm" action="#" method="post">
                 <label for="tName">Turnauksen nimi</label>
                 <input id="tName" name="tName" required />
@@ -42,8 +45,25 @@
                 <label for="tRegion">Maakunta</label>
                 <select id="tRegion" name="tRegion">
                     <option>Valitse</option>
-                    <option>Uusimaa</option>
+                    <option>Ahvenanmaa</option>
+                    <option>Etelä-Karjala</option>
+                    <option>Etelä-Pohjanmaa</option>
+                    <option>Etelä-Savo</option>
+                    <option>Kainuu</option>
+                    <option>Kanta-Häme</option>
+                    <option>Keski-Pohjanmaa</option>
+                    <option>Keski-Suomi</option>
+                    <option>Kymenlaakso</option>
+                    <option>Lappi</option>
                     <option>Pirkanmaa</option>
+                    <option>Pohjanmaa</option>
+                    <option>Pohjois-Karjala</option>
+                    <option>Pohjois-Pohjanmaa</option>
+                    <option>Pohjois-Savo</option>
+                    <option>Päijät-Häme</option>
+                    <option>Satakunta</option>
+                    <option>Uusimaa</option>
+                    <option>Varsinais-Suomi</option>
                 </select>
 
                 <label for="tAge">Ikäluokat</label>
@@ -67,11 +87,12 @@
         </section>
     </main>
 
+    <!-- Alatunniste alkaa tästä -->
     <footer class="site-footer">
-        <div class="container">© 2025 Turnauspalvelu</div>
+        <div class="container">© 2025 FCOTM Turnauspalvelu</div>
     </footer>
-
-    <script src="js/app.js"></script>
+    
+    <script src="js/app.js"></script> <!-- Ulkoinen JavaScript-tiedosto -->
 </body>
 
 </html>

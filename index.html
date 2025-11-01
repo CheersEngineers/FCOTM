@@ -1,19 +1,22 @@
 <!doctype html>
-<html lang="fi">
+<html lang="fi"> <!-- Suomen kielellä -->
 
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="FCOTM Turnauspalvelu">
-    <meta name="description" content="Suomen Turnauspalvelu - Etusivu">
+    <meta name="description" content="Suomen Turnauspalvelu - Etusivu"> <!-- Sivun kuvaus hakukoneille -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>FCOTM — Etusivu</title>
+    <title>FCOTM — Etusivu</title> <!-- Sivun otsikko, näkyy selaimen välilehdessä -->
     <link rel="icon" type="image/x-icon" href="kuvat/favicon.png"> <!-- Tämä on pieni ikoni urlin kirjanmerkissä -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" /> <!-- Ulkoinen CSS-tiedosto tyyleille -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Font Awesome ikonit: Fb, Ig, Tw -->
 </head>
+
 
 <body>
     <header class="site-header">
         <div class="container header-inner">
+            <!-- Päävalikko alkaa tästä -->
             <nav class="main-nav" aria-label="Päävalikko">
                 <ul class="nav-list" id="primary-nav">
                     <li><a href="index.html">Etusivu</a></li>
@@ -22,13 +25,13 @@
                     <li><a href="admin.html">Ylläpitäjän hallinta</a></li>
                 </ul>
             </nav>
-
-            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button> <!-- Valikon painike mobiilissa -->
         </div>
     </header>
 
+    <!-- Pääsisältöalue alkaa tästä -->
     <main class="container main-grid">
-        <aside class="sidebar">
+        <aside class="sidebar"> <!-- Sivupalkki vasemmalla selaimessa, mobiilissa alhaalla -->
             <div class="side-block">
                 <h3>Suodattimet</h3>
                 <label>Aikaväli
@@ -37,8 +40,25 @@
                 <label>Maakunta
                     <select id="filter-region">
                         <option>Kaikki</option>
-                        <option>Uusimaa</option>
+                        <option>Ahvenanmaa</option>
+                        <option>Etelä-Karjala</option>
+                        <option>Etelä-Pohjanmaa</option>
+                        <option>Etelä-Savo</option>
+                        <option>Kainuu</option>
+                        <option>Kanta-Häme</option>
+                        <option>Keski-Pohjanmaa</option>
+                        <option>Keski-Suomi</option>
+                        <option>Kymenlaakso</option>
+                        <option>Lappi</option>
+                        <option>Pirkanmaa</option>
+                        <option>Pohjanmaa</option>
+                        <option>Pohjois-Karjala</option>
+                        <option>Pohjois-Pohjanmaa</option>
                         <option>Pohjois-Savo</option>
+                        <option>Päijät-Häme</option>
+                        <option>Satakunta</option>
+                        <option>Uusimaa</option>
+                        <option>Varsinais-Suomi</option>
                     </select>
                 </label>
                 <label>Ikäluokka
@@ -46,27 +66,33 @@
                 </label>
             </div>
 
+            <!-- Ilmoitukset -->
             <div class="side-block">
                 <h3>Ilmoitukset</h3>
                 <p class="muted">Huom: lisää turnauslomakkeeseen tapahtuman sijainti ja ikäluokka.</p>
             </div>
 
+            <!-- Some painikkeet -->
             <div class="side-block social">
-                <h3>Seuraa</h3>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">FB</a>
-                    <a href="#" aria-label="Instagram">IG</a>
-                    <a href="#" aria-label="Twitter">TW</a>
-                </div>
+                <h3>Seuraa meitä somessa!</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
             </div>
         </aside>
 
         <section class="content">
+            
+            <!-- Turnauspalvelut textbox ("Intro") -->
             <section class="hero card">
-                <h1>Turnauspalvelu</h1>
-                <p>Etsi ja lisää jalkapalloturnauksia helposti — suodata aikavälillä, maakunnan ja ikäluokan mukaan.</p>
+                <h1>Jalkapalloturnaukset</h1>
+                <p>Kaikki Suomen jalkapalloturnaukset samassa paikassa! <br>Etsi ja lisää jalkapalloturnauksia helposti — suodata aikavälillä, maakunnan ja ikäluokan mukaan.</p>
+                <img src="kuvat/jalkapallo.png" srcset="kuvat/jalkapallo.png 2x" alt="Jalkapallo" class="avatar-responsive">
             </section>
 
+            <!-- Hakutulokset -->
             <section class="cards-grid">
                 <article class="card">
                     <h3>Hakutulokset</h3>
@@ -74,11 +100,13 @@
                     <div id="searchResults" class="results">Hakutulokset näkyvät tässä.</div>
                 </article>
 
+                <!-- Kalenteri -->
                 <article class="card">
                     <h3>Kalenteri</h3>
                     <div class="placeholder">Kalenterikomponentti / näkymä</div>
                 </article>
 
+                <!-- Ilmoittautumiset -->
                 <article class="card">
                     <h3>Ilmoittautumiset</h3>
                     <p>Linkit seurojen omiin lomakkeisiin tai fallback-ilmoittautuminen.</p>
@@ -86,6 +114,7 @@
                 </article>
             </section>
 
+            <!-- Turnauksen lisäämislomake -->
             <section class="card form-card">
                 <h3>Lisää oma turnaus (esimerkki)</h3>
                 <form id="tournamentForm" action="#" method="post">
@@ -120,11 +149,12 @@
         </section>
     </main>
 
+    <!-- Alatunniste alkaa tästä -->
     <footer class="site-footer">
         <div class="container">© 2025 FCOTM Turnauspalvelu</div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> <!-- Ulkoinen JavaScript-tiedosto -->
 </body>
 
 </html>

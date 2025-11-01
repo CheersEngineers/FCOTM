@@ -79,3 +79,19 @@ body{margin:0;background:var(--bg);color:#141414;line-height:1.45}
 /* Small visual helpers */
 .hidden{display:none}
 .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
+
+/* Some ikonit: Fb, Ig ja Tw */
+.social-links a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0077ff;
+}
+
+.avatar-responsive{ width:15vw; max-width:100px; height:auto; aspect-ratio:1/1; border-radius:50%; object-fit:cover; }
+
+
