@@ -20,8 +20,8 @@
             <nav class="main-nav" aria-label="Päävalikko">
                 <ul class="nav-list" id="primary-nav">
                     <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="joukkueen-ilmoittautuminen.html">Joukkueen ilmoittautaminen</a></li>
-                    <li><a href="turnauksen-ilmoittautuminen.html">Turnauksen ilmoittautaminen</a></li>
+                    <li><a href="joukkueen-ilmoittautuminen.html">Joukkueen ilmoittautuminen</a></li>
+                    <li><a href="turnauksen-ilmoittautuminen.html">Turnauksen ilmoittaminen</a></li>
                     <li><a href="admin.html">Ylläpitäjän hallinta</a></li>
                 </ul>
             </nav>
@@ -35,7 +35,10 @@
             <div class="side-block">
                 <h3>Suodattimet</h3>
                 <label>Aikaväli
-                    <input id="filter-date" type="text" placeholder="1.4–1.6" />
+                    <input id="filter-date" type="date">
+                </label>
+                <label>Ikäluokka
+                    <input id="filter-age" type="text" placeholder="U12, U14..." />
                 </label>
                 <label>Maakunta
                     <select id="filter-region">
@@ -60,9 +63,6 @@
                         <option>Uusimaa</option>
                         <option>Varsinais-Suomi</option>
                     </select>
-                </label>
-                <label>Ikäluokka
-                    <input id="filter-age" type="text" placeholder="U12, U14..." />
                 </label>
             </div>
 
@@ -121,17 +121,17 @@
                     <label for="title">Turnauksen nimi</label>
                     <input id="title" name="title" required />
 
+                    <label for="age">Ikäluokka</label>
+                    <input id="age" name="age" placeholder="U12, U14" />
+
                     <label for="date">Päivämäärä</label>
-                    <input id="date" name="date" type="text" placeholder="1.6–2.6" />
+                    <input id="date" name="date" type="date"/>
 
                     <label for="region">Maakunta</label>
                     <select id="region" name="region">
                         <option>Valitse</option>
                         <option>Uusimaa</option>
                     </select>
-
-                    <label for="age">Ikäluokka</label>
-                    <input id="age" name="age" placeholder="U12, U14" />
 
                     <label for="externalLink">Seuran oma ilmoittautumislinkki</label>
                     <input id="externalLink" name="externalLink" type="url" placeholder="https://seura.fi/ilmo" />

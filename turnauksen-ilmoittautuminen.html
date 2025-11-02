@@ -18,8 +18,8 @@
             <nav class="main-nav" aria-label="Päävalikko">
                 <ul class="nav-list" id="primary-nav">
                     <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="joukkueen-ilmoittautuminen.html">Joukkueen ilmoittautaminen</a></li>
-                    <li><a href="turnauksen-ilmoittautuminen.html">Turnauksen ilmoittautaminen</a></li>
+                    <li><a href="joukkueen-ilmoittautuminen.html">Joukkueen ilmoittautuminen</a></li>
+                    <li><a href="turnauksen-ilmoittautuminen.html">Turnauksen ilmoittaminen</a></li>
                     <li><a href="admin.html">Ylläpitäjän hallinta</a></li>
                 </ul>
             </nav>
@@ -31,20 +31,20 @@
     <!-- Pääsisältöalue alkaa tästä -->
     <main class="container single-column">
         <section class="card form-card">
-            <h2>Turnauksen ilmoittautuminen / lisää turnaus</h2>
+            <h2>Turnauksen ilmoittaminen / lisää turnaus</h2>
             <p>Täytä tapahtuman tiedot — voit antaa myös seuran oman ilmoittautumislinkin.</p>
 
             <!-- Ilmoittautumislomake alkaa tästä -->
             <form id="tournForm" action="#" method="post">
-                <label for="tName">Turnauksen nimi</label>
+                <label for="tName">Turnauksen nimi*</label>
                 <input id="tName" name="tName" required />
 
-                <label for="tDates">Päivämäärä(t)</label>
-                <input id="tDates" name="tDates" placeholder="1.6–2.6" />
+                <label for="tDates">Päivämäärä(t)*</label>
+                <input id="tDates" name="tDates" placeholder="1.6–2.6" required/>
 
-                <label for="tRegion">Maakunta</label>
-                <select id="tRegion" name="tRegion">
-                    <option>Valitse</option>
+                <label for="tRegion">Maakunta*</label>
+                <select id="tRegion" name="tRegion" required>
+                    <option value="" disabled selected>Valitse</option> <!--/* Pakottaa käyttäjän valitsemaan jonkin vaihtoehdon ennen lomakkeen lähettämistä */-->
                     <option>Ahvenanmaa</option>
                     <option>Etelä-Karjala</option>
                     <option>Etelä-Pohjanmaa</option>
@@ -66,14 +66,17 @@
                     <option>Varsinais-Suomi</option>
                 </select>
 
-                <label for="tAge">Ikäluokat</label>
-                <input id="tAge" name="tAge" placeholder="U10, U12..." />
+                <label for="tAddress">Osoite:*</label>
+                <textarea id="tAddress" name="tAddress" rows="3" placeholder="Turnauksen sijainti" required></textarea>
 
-                <label for="tFee">Osallistumismaksu</label>
-                <input id="tFee" name="tFee" placeholder="esim. 50€" />
+                <label for="tAge">Ikäluokat*</label>
+                <input id="tAge" name="tAge" placeholder="U10, U12..." required/>
 
-                <label for="tLink">Ilmoittautumislinkki (seura)</label>
-                <input id="tLink" name="tLink" type="url" placeholder="https://seura.fi/ilmo" />
+                <label for="tFee">Osallistumismaksu*</label>
+                <input id="tFee" name="tFee" placeholder="esim. 50€" required/>
+
+                <label for="tLink">Ilmoittautumislinkki (seura)*</label>
+                <input id="tLink" name="tLink" type="url" placeholder="https://seura.fi/ilmo" required/>
 
                 <label class="checkbox">
                     <input type="checkbox" name="consent3" required /> Hyväksyn tietojen käsittelyn
