@@ -58,6 +58,8 @@ body{margin:0;background:var(--bg);color:#141414;line-height:1.45}
 .form-card input[type="tel"]{margin:5px 5px 10px 0; padding: 2px;border:1px solid #e1e6ef;border-radius:6px}
 .checkbox{display:flex;align-items:center;gap:8px;font-size:14px}
 
+.form-card textarea {resize: vertical;} /*käyttäjä voi suurentaa aluetta pystysuunnassa*/
+    
 .form-actions{display:flex;justify-content:space-between;margin-top:8px}
 .btn{display:inline-block;padding:8px 12px;border-radius:6px;border:1px solid transparent;background:#f0f4ff;color:var(--accent);text-decoration:none;cursor:pointer}
 .btn.primary{background:var(--accent);color:#fff}
