@@ -6,6 +6,7 @@
 | 1.0 | 1.11.2025 | Jonas Christiansen | Alkuperäinen versio | + Git repo luotu |
 | 1.1 | 1.11.2025 | Jonas Christiansen | Sivut + sisältö | - |
 | 1.11 | 1.11.2025 | Jonas Christiansen | Koodin siistiminen ja some ikonit | - |
+| 1.12 | 1.11.2025 | Jonas Christiansen | Maakunnat lomakkeeseen | Pieni päivitys |
 
 
 ---
