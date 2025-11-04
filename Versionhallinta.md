@@ -13,6 +13,7 @@
 | 1.16 | 3.11.2025 | Heidi Hekkala | Lisätty "tyhjennä"-painike lomakesivuille. | Painiketta muokattava, en saanut vielä samankokoiseksi kuin viereiset painikkeet |
 | 1.17 | 3.11.2025 | Heidi Hekkala | Poistettu etusivulta ylimääräinen "lisää turnaus"-lomake | - |
 | 1.18 | 4.11.2025 | Mirva Koivusipilä | Lisätty alku- ja lopetuspäivämäärät ajanjakson suodatusominaisuuteen etusivulle sekä lisätty turnauksen ilmoittamisen lomakkeeseen mahdollisuus ilmoittaa aloituspäivämäärä(required) ja lopetuspäivämäärä | Joukkueen ilmoittamisen lomakkeesta puuttuu turnauksen tunnistetiedot, mihin halutaan ilmottautua (?) |
+| 1.19 | 4.11.2025 | Milja Kivijärvi | Lisätty asteriskit turnaukseen ilmoittautumiselle (joukkueen ilmoittautuminen) ja laitettu lomakkeelle placeholdereita | - |
 
 ---
 
