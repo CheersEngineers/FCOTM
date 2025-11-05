@@ -16,7 +16,7 @@
 | 1.19 | 4.11.2025 | Milja Kivijärvi | Lisätty asteriskit (tähdet) turnaukseen ilmoittautumiselle (joukkueen ilmoittautuminen) ja laitettu lomakkeelle placeholdereita | - |
 | 1.2 | 4.11.2025 | Mirva Koivusipilä | Lisätty hae-painike suodattimiin | - |
 | 1.21 | 5.11.2025 | Heidi Hekkala | Lisätty ilmoittutumissivulle Valitse turnaus -valikko | Lomakkeiden kenttien ulkonäkö ei vielä yhtenäinen |
-
+| 1.22 | 5.11.2025 | Heidi Hekkala | Ilmoittautumissivun kenttävalidointien päivitys | - |
 ---
 
 ### Päivitysohje (lyhyt)
