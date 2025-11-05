@@ -36,6 +36,17 @@
 
             <!-- Ilmoittautumislomake alkaa tästä -->
             <form id="teamForm" action="#" method="post">
+                <label for="tournament">Valitse turnaus*</label>
+                <select id="tournament" name="tournament" required>
+                    <option value="" disabled selected>Valitse</option> <!--/* Pakottaa käyttäjän valitsemaan jonkin vaihtoehdon ennen lomakkeen lähettämistä */-->
+                    <option>MarrasCup 28.-30.11.2025 (Helsinki)</option>
+                    <option>Jalakapallo-Peijjaiset 5.-7.12.2025 (Kuopio)</option>
+                    <option>Jouluturnaus 13.-14.12.2025 (Jyväskylä)</option>
+                    <option>Uudenvuodenturnaus 3.-4.1.2026 (Tampere)</option>
+                    <option>Talviturnaus 24.-25.1.2026 (Lahti)</option>
+                    <option>Kokkola Cup 16.-19.7.2026 (Kokkola)</option>
+                </select>
+
                 <label for="clubName">Seura / Club *</label>
                 <input id="clubName" name="clubName" required />
 
