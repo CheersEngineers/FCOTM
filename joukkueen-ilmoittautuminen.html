@@ -60,10 +60,10 @@
                 <input id="email" name="email" type="email" required />
 
                 <label for="phone">Puhelin</label>
-                <input id="phone" name="phone" type="tel" placeholder="+358 401234567"/>
+                <input id="phone" name="phone" type="tel" pattern="^\+?[0-9 ]{10,20}$" placeholder="+358 401234567"/>
 
-                <label for="ageGroup">Ikäluokka</label>
-                <input id="ageGroup" name="ageGroup" placeholder="U12, U14" />
+                <label for="ageGroup">Ikäluokka*</label>
+                <input id="ageGroup" name="ageGroup" placeholder="U12, U14" required/>
 
                 <label for="externalTeamLink">Seuran oma ilmoittautumislinkki</label>
                 <input id="externalTeamLink" name="externalTeamLink" type="url" placeholder="https://seura.fi/ilmo" />
