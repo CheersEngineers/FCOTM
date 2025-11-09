@@ -33,41 +33,68 @@
     <main class="container main-grid">
         <aside class="sidebar"> <!-- Sivupalkki vasemmalla selaimessa, mobiilissa alhaalla -->
             <div class="side-block">
-                <h3>Suodattimet</h3>
-                <label>Turnaushaku ajanjakso alkaen
-                    <input id="filter-date-start" type="date">
-                </label>
-                <label>Turnaushaku ajanjakson loppu
-                    <input id="filter-date-end" type="date">
-                </label>
-                <label>Ikäluokka
-                    <input id="filter-age" type="text" placeholder="U12, U14..." />
-                </label>
-                <label>Maakunta
-                    <select id="filter-region">
-                        <option>Kaikki</option>
-                        <option>Ahvenanmaa</option>
-                        <option>Etelä-Karjala</option>
-                        <option>Etelä-Pohjanmaa</option>
-                        <option>Etelä-Savo</option>
-                        <option>Kainuu</option>
-                        <option>Kanta-Häme</option>
-                        <option>Keski-Pohjanmaa</option>
-                        <option>Keski-Suomi</option>
-                        <option>Kymenlaakso</option>
-                        <option>Lappi</option>
-                        <option>Pirkanmaa</option>
-                        <option>Pohjanmaa</option>
-                        <option>Pohjois-Karjala</option>
-                        <option>Pohjois-Pohjanmaa</option>
-                        <option>Pohjois-Savo</option>
-                        <option>Päijät-Häme</option>
-                        <option>Satakunta</option>
-                        <option>Uusimaa</option>
-                        <option>Varsinais-Suomi</option>
-                    </select>
-                </label>
-                <button class="form-actions btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Hae turnauksia</button>
+                <form action="#" method="post">
+                    <h3>Suodattimet</h3>
+                    <label>Turnaushaku ajanjakso alkaen
+                        <input id="filter-date-start" type="date">
+                    </label>
+                    <label>Turnaushaku ajanjakson loppu
+                        <input id="filter-date-end" type="date">
+                    </label>
+                    <label>Turnauksen nimi
+                        <input type="text" name="tournamentName" id="tournamentName">
+                    </label>
+                    <label>Ikäluokka
+                        <input id="filter-age" type="text" placeholder="U12, U14..." />
+                    </label>
+                    <label>Maakunta
+                        <select id="filter-region">
+                            <option>Kaikki</option>
+                            <option>Ahvenanmaa</option>
+                            <option>Etelä-Karjala</option>
+                            <option>Etelä-Pohjanmaa</option>
+                            <option>Etelä-Savo</option>
+                            <option>Kainuu</option>
+                            <option>Kanta-Häme</option>
+                            <option>Keski-Pohjanmaa</option>
+                            <option>Keski-Suomi</option>
+                            <option>Kymenlaakso</option>
+                            <option>Lappi</option>
+                            <option>Pirkanmaa</option>
+                            <option>Pohjanmaa</option>
+                            <option>Pohjois-Karjala</option>
+                            <option>Pohjois-Pohjanmaa</option>
+                            <option>Pohjois-Savo</option>
+                            <option>Päijät-Häme</option>
+                            <option>Satakunta</option>
+                            <option>Uusimaa</option>
+                            <option>Varsinais-Suomi</option>
+                        </select>
+                    </label>
+                    <fieldset>
+                        <legend>Sukupuoli</legend>
+                        <input type="radio" name="spuoli" id="tytot" value="tytot">
+                        <label for="tytot">Tytöt</label>
+                        <input type="radio" name="spuoli" id="pojat" value="pojat">
+                        <label for="pojat">Pojat</label>
+                        <input type="radio" name="spuoli" id="naiset" value="naiset">
+                        <label for="naiset">Naiset</label>
+                        <input type="radio" name="spuoli" id="miehet" value="miehet">
+                        <label for="miehet">Miehet</label>
+                        <input type="radio" name="spuoli" id="seka" value="seka">
+                        <label for="seka">Sekajoukkueet</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Turnauksen taso</legend>
+                        <select name="serieLevel" id="serieLevel">
+                            <option value="">-- Valitse taso --</option>
+                            <option value="kilpa">Kilpa / Taso 1</option>
+                            <option value="haaste">Haaste / Taso 2</option>
+                            <option value="harraste">Harraste / Taso 3</option>
+                        </select>
+                    </fieldset>
+                    <button class="form-actions btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Hae turnauksia</button>
+                </form>
             </div>
 
             <!-- Ilmoitukset -->
