@@ -74,28 +74,22 @@
                             <option>Varsinais-Suomi</option>
                         </select>
                     </label>
-                    <fieldset>
-                        <legend>Sukupuoli</legend>
-                        <input type="radio" name="spuoli" id="tytot" value="tytot">
-                        <label for="tytot">Tytöt</label>
-                        <input type="radio" name="spuoli" id="pojat" value="pojat">
-                        <label for="pojat">Pojat</label>
-                        <input type="radio" name="spuoli" id="naiset" value="naiset">
-                        <label for="naiset">Naiset</label>
-                        <input type="radio" name="spuoli" id="miehet" value="miehet">
-                        <label for="miehet">Miehet</label>
-                        <input type="radio" name="spuoli" id="seka" value="seka">
-                        <label for="seka">Sekajoukkueet</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Turnauksen taso</legend>
-                        <select name="serieLevel" id="serieLevel">
-                            <option value="">-- Valitse taso --</option>
-                            <option value="kilpa">Kilpa / Taso 1</option>
-                            <option value="haaste">Haaste / Taso 2</option>
-                            <option value="harraste">Harraste / Taso 3</option>
-                        </select>
-                    </fieldset>
+                    <label for="spuoli">Sukupuoli</label>
+                    <select name="spuoli" id="spuoli">
+                        <option value="">-- Valitse --</option>
+                        <option value="tytot">Tytöt</option>
+                        <option value="pojat">Pojat</option>
+                        <option value="naiset">Naiset</option>
+                        <option value="miehet">Miehet</option>
+                        <option value="seka">Sekajoukkueet</option>
+                    </select>
+                    <label>Turnauksen taso</label>
+                    <select name="serieLevel" id="serieLevel">
+                        <option value="">-- Valitse taso --</option>
+                        <option value="kilpa">Kilpa / Taso 1</option>
+                        <option value="haaste">Haaste / Taso 2</option>
+                        <option value="harraste">Harraste / Taso 3</option>
+                    </select>
                     <button class="form-actions btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Hae turnauksia</button>
                 </form>
             </div>
