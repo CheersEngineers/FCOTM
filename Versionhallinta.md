@@ -20,6 +20,7 @@
 | 1.23 | 9.11.2025 | Mirva Koivusipilä | Lisätty suodattimiin kentät turnauksen nimi, sukupuoli ja turnauksen taso + lisätty form suodattimien ympärille | - |
 | 1.24 | 10.11.2025 | Heidi Hekkala | Yhtenäistetty lomakkeiden kenttien ulkonäköä (fontit, paddingit, marginaalit, asteriskien muotoilu)| Fontit ja värit vaihdetaan vielä myöhemmin Palloliiton brändiohjeistuksen mukaisiksi |
 | 1.3 | 10.11.2025 | Heidi Hekkala | Värit ja fontit Palloliiton ohjeistuksen mukaisiksi | Tarkistettava vielä saavutettavuustyökaluilla |
+| 1.31 | 10.11.2025 | Heidi Hekkala | Painikkeiden hover-väritystä hieman tummennettu | - |
 
 
 ---

@@ -73,6 +73,7 @@ fieldset{margin: 5px 5px 10px 0;}
 .btn{display:inline-block;padding:8px 16px;border-radius:9999px;border:1px solid transparent;background:#A8C243;color:black;text-decoration:none;cursor:pointer}
 .btn.primary{background:#A8C243;color:black;}
 .btn.ghost{background-color:#7FBDF0;border-color:#dbe6ff;color:#00308C}
+.btn:hover {filter: brightness(0.9);}
 
 /* Admin area */
 .admin-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
