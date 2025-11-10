@@ -25,9 +25,9 @@ h1, h2, h3, h4, h5, h6 {font-family: "Finlandica", sans-serif;}
 .main-nav{flex:1;margin-left:24px}
 .nav-list{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
 .nav-list a{display:inline-block;padding:8px 12px;text-decoration:none;color:#FFFFFF;border-radius:9999px;transition:all .12s}
-.nav-list a:hover, .nav-list a:focus{background:#f0f6ff;color:var(--accent)}
+.nav-list a:hover, .nav-list a:focus{background:#f0f6ff;color:#00308C}
 .nav-list a.active, .nav-list a[aria-current="page"]{background:#7FBDF0;color:#00308C}
-.nav-toggle{display:none;border:0;background:transparent;font-size:20px;padding:6px 10px}
+.nav-toggle{display:none;border:0;background:transparent;color:white;font-size:20px;padding:6px 10px}
 
 /* Layout grids */
 .main-grid{display:grid;grid-template-columns:280px 1fr;gap:var(--gap);padding:var(--gap) 0}
@@ -109,6 +109,9 @@ fieldset{margin: 5px 5px 10px 0;}
 .btn:hover {filter: brightness(0.9);}
 
 /* Admin area */
+.login-form{max-width: 500px; align-items: center;}
+.login-form .form-card{box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);}
+
 .admin-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 
 /* Footer */
@@ -120,7 +123,7 @@ fieldset{margin: 5px 5px 10px 0;}
   .cards-grid{grid-template-columns:1fr}
   .nav-list{display:none;position:absolute;top:64px;right:12px;flex-direction:column;gap:6px;background:var(--card);padding:12px;border:1px solid #eef1f6;border-radius:8px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
   .nav-list a {color: #00308C;}
-  .nav-list a:hover, .nav-list a:focus { background: #f0f6ff; color: #0B6EF6;}
+  .nav-list a:hover, .nav-list a:focus { background: #f0f6ff; color: #00308C;}
   .nav-toggle{display:inline-block}
   .nav-list.show{display:flex}
   .sidebar{order:2;margin-left: 0;}
@@ -165,8 +168,12 @@ fieldset{margin: 5px 5px 10px 0;}
 }
 
 .social-links a:hover {
-  color: #0077ff;
+  color: #00308C;
 }
 
 .avatar-responsive{ width:15vw; max-width:100px; height:auto; aspect-ratio:1/1; border-radius:50%; object-fit:cover; }
 
+.jalkapallo { /*kirjautumisikkunan jalkapallon koko sopivaksi*/
+  width: 100px;
+  height: auto;
+}

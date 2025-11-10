@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="FCOTM Turnauspalvelu">
-    <meta name="description" content="Ylläpitäjän hallinta"> <!-- Sivun kuvaus hakukoneille -->
+    <meta name="description" content="Kirjautuminen ylläpitosivustolle"> <!-- Sivun kuvaus hakukoneille -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ylläpitäjän hallinta</title> <!-- Sivun otsikko, näkyy selaimen välilehdessä -->
+    <title>Kirjautuminen ylläpitäjänä</title> <!-- Sivun otsikko, näkyy selaimen välilehdessä -->
     <link rel="icon" type="image/x-icon" href="kuvat/favicon.png"> <!-- Tämä on pieni ikoni urlin kirjanmerkissä -->
     <link rel="stylesheet" href="css/styles.css" /> <!-- Ulkoinen CSS-tiedosto tyyleille -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Googlefontit-->
@@ -31,35 +31,34 @@
         </div>
     </header>
 
-    <main class="container main-grid">
-        <section class="content">
-            <section class="card">
-                <h2>Ylläpitäjän hallinta</h2>
-                <p>Toiminnot testitilassa. Toimeksiannot vaikuttavat vain demo-dataan.</p>
+    <main class="container single-column login-form">
+        <section class="card form-card">
+            <h1>Kirjautuminen hallintasivulle</h1>
 
-                <div class="admin-actions">
-                    <button class="btn" data-action="add">Lisää turnaus</button>
-                    <button class="btn" data-action="remove">Poista turnaus</button>
-                    <button class="btn" data-action="remove-team">Poista joukkue</button>
-                    <button class="btn" data-action="remove-player">Poista pelaaja</button>
-                </div>
+            <form action="./admin.html" method="get">
+            <div class="imgcontainer">
+                <img src="kuvat/jalkapallo.png" alt="Jalkapallo" class="jalkapallo">
+            </div>
 
-                <div id="adminLog" class="results" style="margin-top:12px">Toiminnot näkyvät täällä.</div>
-            </section>
+            <label for="uname"><b>Käyttäjätunnus *</b></label>
+            <input type="text" placeholder="Syötä käyttäjätunnus" name="uname" required>
+
+            <label for="psw"><b>Salasana *</b></label>
+            <input type="password" placeholder="Syötä salasana" name="psw" required>
+                    
+            <div class="form-actions">
+                <a class="btn primary" href="admin.html">Kirjaudu</a>
+                <a class="btn ghost" href="index.html">Peruuta</a>
+            </div>
+
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Pysy kirjautuneena
+                </label>
+                <span class="psw"><a href="#">Unohditko salasanasi?</a></span>
+                
+            </form>
+
         </section>
-
-        <aside class="sidebar">
-            <div class="side-block">
-                <h3>Ylläpidon muistio</h3>
-                <p class="muted">Käytä tätä näkymää vastuullisesti. Poistot on mahdollista peruuttaa vain
-                    varmuuskopiosta.</p>
-            </div>
-
-            <div class="side-block">
-                <h3>API-status</h3>
-                <p class="muted">API: OK (demo)</p>
-            </div>
-        </aside>
     </main>
 
     <!-- Alatunniste alkaa tästä -->

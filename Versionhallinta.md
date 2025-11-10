@@ -24,6 +24,7 @@
 | 1.32 | 10.11.2025 | Milja Kivijärvi | Burger-valikon tekstien värit (ei focus tai hover) muutettu valkoisesta tummemman sinisiksi | Valkoinen teksti valkoisella pohjalla huomattu saavutettavuustarkistuksen yhteydessä |
 | 1.33 | 10.11.2025 | Mirva Koivusipilä | Korjaukset lomakkeiden kenttiin | - |
 | 1.34 | 10.11.2025 | Jonas Christiansen | Pallo pyörimään | tärkeä ominaisuus |
+| 1.4 | 11.11.2025 | Heidi Hekkala | Tehty kirjautuminen.html + Naviin vaihdettu linkki + kirjautumissivulta pääsy admin.html -sivulle + värien hienosäätöä | Kirjautumislomakkeen muotoilu kesken + siirtyminen hallintasivulle toimii toistaiseksi ilman kirjautumistietoja, koska painike on vain linkki. |
 
 ---
 
