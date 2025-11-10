@@ -86,6 +86,8 @@ fieldset{margin: 5px 5px 10px 0;}
   .main-grid{grid-template-columns:1fr;padding:12px}
   .cards-grid{grid-template-columns:1fr}
   .nav-list{display:none;position:absolute;top:64px;right:12px;flex-direction:column;gap:6px;background:var(--card);padding:12px;border:1px solid #eef1f6;border-radius:8px;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+  .nav-list a {color: #00308C;}
+  .nav-list a:hover, .nav-list a:focus { background: #f0f6ff; color: #0B6EF6;}
   .nav-toggle{display:inline-block}
   .nav-list.show{display:flex}
   .sidebar{order:2;margin-left: 0;}
