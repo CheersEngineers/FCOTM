@@ -36,8 +36,8 @@
 
             <!-- Ilmoittautumislomake alkaa tästä -->
             <form id="tournForm" action="#" method="post">
-                <label for="tName">Turnauksen nimi*</label>
-                <input id="tName" name="tName" required />
+                <label for="tName">Turnauksen nimi *</label>
+                <input id="tName" name="tName" type="text" required />
 
                 <label for="tDate-start">Turnauksen ajankohta alkaen *</label>
                 <input id="tDate-start" name="tDate-start" type="date" required>
@@ -48,7 +48,7 @@
                 <!--<label for="tDates">Päivämäärä(t)*</label>
                 <input id="tDates" name="tDates" placeholder="1.6–2.6" required/> -->
 
-                <label for="tRegion">Maakunta*</label>
+                <label for="tRegion">Maakunta *</label>
                 <select id="tRegion" name="tRegion" required>
                     <option value="" disabled selected>Valitse</option> <!--/* Pakottaa käyttäjän valitsemaan jonkin vaihtoehdon ennen lomakkeen lähettämistä */-->
                     <option>Ahvenanmaa</option>
@@ -72,16 +72,16 @@
                     <option>Varsinais-Suomi</option>
                 </select>
 
-                <label for="tAddress">Osoite:*</label>
+                <label for="tAddress">Osoite *</label>
                 <textarea id="tAddress" name="tAddress" rows="3" placeholder="Turnauksen sijainti" required></textarea>
 
-                <label for="tAge">Ikäluokat*</label>
-                <input id="tAge" name="tAge" placeholder="U10, U12..." required/>
+                <label for="tAge">Ikäluokat *</label>
+                <input id="tAge" name="tAge" type="text" placeholder="U10, U12..." required/>
 
-                <label for="tFee">Osallistumismaksu*</label>
-                <input id="tFee" name="tFee" placeholder="esim. 50€" required/>
+                <label for="tFee">Osallistumismaksu *</label>
+                <input id="tFee" name="tFee" type="text" placeholder="esim. 50€" required/>
 
-                <label for="tLink">Ilmoittautumislinkki (seura)*</label>
+                <label for="tLink">Ilmoittautumislinkki (seura) *</label>
                 <input id="tLink" name="tLink" type="url" placeholder="https://seura.fi/ilmo" required/>
 
                 <label class="checkbox">

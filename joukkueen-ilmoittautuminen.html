@@ -36,7 +36,7 @@
 
             <!-- Ilmoittautumislomake alkaa tästä -->
             <form id="teamForm" action="#" method="post">
-                <label for="tournament">Valitse turnaus*</label>
+                <label for="tournament">Valitse turnaus *</label>
                 <select id="tournament" name="tournament" required>
                     <option value="" disabled selected>Valitse</option> <!--/* Pakottaa käyttäjän valitsemaan jonkin vaihtoehdon ennen lomakkeen lähettämistä */-->
                     <option>MarrasCup 28.-30.11.2025 (Helsinki)</option>
@@ -48,13 +48,13 @@
                 </select>
 
                 <label for="clubName">Seura / Club *</label>
-                <input id="clubName" name="clubName" required />
+                <input id="clubName" name="clubName" type="text" required />
 
                 <label for="teamName">Joukkueen nimi *</label>
-                <input id="teamName" name="teamName" required />
+                <input id="teamName" name="teamName" type="text" required />
 
                 <label for="contact">Yhteyshenkilö (nimi) *</label>
-                <input id="contact" name="contact" placeholder="Etunimi Sukunimi" required/>
+                <input id="contact" name="contact" type="text" placeholder="Etunimi Sukunimi" required/>
 
                 <label for="email">Sähköposti *</label>
                 <input id="email" name="email" type="email" required />
@@ -62,8 +62,8 @@
                 <label for="phone">Puhelin</label>
                 <input id="phone" name="phone" type="tel" pattern="^\+?[0-9 ]{10,20}$" placeholder="+358 401234567"/>
 
-                <label for="ageGroup">Ikäluokka*</label>
-                <input id="ageGroup" name="ageGroup" placeholder="U12, U14" required/>
+                <label for="ageGroup">Ikäluokka *</label>
+                <input id="ageGroup" name="ageGroup" type="text" placeholder="U12, U14" required/>
 
                 <label for="externalTeamLink">Seuran oma ilmoittautumislinkki</label>
                 <input id="externalTeamLink" name="externalTeamLink" type="url" placeholder="https://seura.fi/ilmo" />
