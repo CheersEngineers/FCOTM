@@ -44,13 +44,46 @@ h1, h2, h3, h4, h5, h6 {font-family: "Finlandica", sans-serif;}
 .social-links a{display:inline-block;margin-right:8px;padding:6px 8px;border-radius:6px;background:#f5f7fb;color:var(--muted);text-decoration:none}
 
 /* Cards and content */
-.content .hero{padding:18px}
+.content .hero {
+  position: relative;       /* tarvitaan absoluuttiselle .pallo:lle */
+  overflow: visible;
+  padding-bottom: 120px;     /* varaa tilaa pallolle tekstin alapuolelle; säädä tarvittaessa */
+}
+/* Ryhmittele tekstit erikseen, anna niille korkea z-index */
+.content .hero > h1,
+.content .hero > p {
+  position: relative;
+  z-index: 3;               /* teksti näkyy pallon päällä */
+  margin: 0 0 8px 0;
+}
 .card{background:var(--card);padding:14px;border:1px solid #eef1f6;border-radius:8px}
 .cards-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--gap);margin:var(--gap) 0}
 .placeholder{min-height:80px;background:#fbfdff;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
 
 .search{width:100%;padding:8px;border:1px solid #e0e6f0;border-radius:6px;margin:10px 0}
 .results .result-card{padding:8px;border-bottom:1px dashed #eef1f6}
+
+/* Animoitu pallo */
+.pallo {
+  position: absolute;
+  left: 10%;                          /* keskitetään lähtöpiste */
+  transform: translateX(-10%);        /* siirrä hiukan oikealle jos haluat */
+  bottom: 8px;                        /* sijoittaa pallon tekstin alapuolelle */
+  z-index: 1;                         /* alempi kuin teksti */
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+  will-change: transform;
+  animation: pallo-horizontal 3s cubic-bezier(.22,.9,.36,1) infinite alternate;
+}
+
+/* Liikerata: enemmän oikealle */
+@keyframes pallo-horizontal {
+  0%   { transform: translateX(-50%) rotate(0deg); }                           /* keskeltä */
+  35%  { transform: translateX(calc(-50% + 100px)) rotate(360deg); }           /* oikeammalle */
+  70%  { transform: translateX(calc(-50% + 180px)) rotate(720deg); }           /* vielä oikeammalle */
+  100% { transform: translateX(calc(-50% + 240px)) rotate(1080deg); }          /* maksimi oikealla */
+}
 
 /* Forms */
 .form-card form, .card form{display:flex;flex-direction:column;gap:5px}
@@ -92,6 +125,26 @@ fieldset{margin: 5px 5px 10px 0;}
   .nav-list.show{display:flex}
   .sidebar{order:2;margin-left: 0;}
   .content{order:1}
+}
+
+@media (max-width: 720px) {
+  .content .hero {
+    padding-bottom: 110px; /* lisää tilaa pallolle alhaalta */
+  }
+
+  .pallo {
+    width: 56px;            /* pienempi pallo mobiilissa */
+    bottom: 6px;           /* hieman lähemmäs hero-alareunaa */
+    left: 10%;             /* siirrä pallo oikeammalle */
+    transform: translateX(-50%); /* keskitys suhteessa left */
+    animation-duration: 2.2s;    /* nopeus sopivammaksi */
+    z-index: 1;            /* tekstin alle */
+  }
+  @keyframes pallo-horizontal {
+    0%   { transform: translateX(-50%) rotate(0deg); }
+    50%  { transform: translateX(calc(-50% + 40px)) rotate(360deg); }
+    100% { transform: translateX(calc(-50% + 80px)) rotate(720deg); }
+  }
 }
 
 @media (max-width:600px) {
