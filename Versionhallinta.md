@@ -18,6 +18,8 @@
 | 1.21 | 5.11.2025 | Heidi Hekkala | Lisätty ilmoittutumissivulle Valitse turnaus -valikko | Lomakkeiden kenttien ulkonäkö ei vielä yhtenäinen |
 | 1.22 | 5.11.2025 | Heidi Hekkala | Ilmoittautumissivun kenttävalidointien päivitys | - |
 | 1.23 | 9.11.2025 | Mirva Koivusipilä | Lisätty suodattimiin kentät turnauksen nimi, sukupuoli ja turnauksen taso + lisätty form suodattimien ympärille | - |
+| 1.24 | 10.11.2025 | Heidi Hekkala | Yhtenäistetty lomakkeiden kenttien ulkonäköä (fontit, paddingit, marginaalit, asteriskien muotoilu)| Fontit ja värit vaihdetaan vielä myöhemmin Palloliiton brändiohjeistuksen mukaisiksi |
+
 ---
 
 ### Päivitysohje (lyhyt)
