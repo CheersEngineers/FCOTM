@@ -49,6 +49,33 @@ h1, h2, h3, h4, h5, h6 {font-family: "Finlandica", sans-serif;}
   overflow: visible;
   padding-bottom: 120px;     /* varaa tilaa pallolle tekstin alapuolelle; säädä tarvittaessa */
 }
+
+/* Keskitetyt suodattimet content-alueella */
+.content .filters { margin: var(--gap) 0 16px 0; display:block; }
+.content .filters .filters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+/* Suodatinlabelit rivitettynä ja ikoni mukana */
+.content .filters .filters-grid label {  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Suodatininputit vievät jäljellä olevan tilan */
+.content .filters .filters-grid label input,
+.content .filters .filters-grid label select,
+.content .filters .filters-grid label textarea {
+  flex: 1 1 auto;
+  min-width: 0; /* estää overflowin pienemmillä näytöillä */
+}
+
 /* Ryhmittele tekstit erikseen, anna niille korkea z-index */
 .content .hero > h1,
 .content .hero > p {
@@ -66,9 +93,9 @@ h1, h2, h3, h4, h5, h6 {font-family: "Finlandica", sans-serif;}
 /* Animoitu pallo */
 .pallo {
   position: absolute;
-  left: 10%;                          /* keskitetään lähtöpiste */
-  transform: translateX(-10%);        /* siirrä hiukan oikealle jos haluat */
-  bottom: 8px;                        /* sijoittaa pallon tekstin alapuolelle */
+  left: 25%;                          /* sijoitus hero-alueen vasempaan reunaan */
+  transform: translateX(-10%);        /* keskitys suhteessa left */
+  bottom: 8px;                        /* hieman hero-alareunan yläpuolelle */
   z-index: 1;                         /* alempi kuin teksti */
   width: 80px;
   height: auto;
@@ -128,13 +155,14 @@ fieldset{margin: 5px 5px 10px 0;}
   .nav-list.show{display:flex}
   .sidebar{order:2;margin-left: 0;}
   .content{order:1}
+  .content .filters .filters-grid { grid-template-columns: 1fr; }
+  .content .filters .filters-grid label {flex-direction: column; align-items: stretch;
 }
 
 @media (max-width: 720px) {
   .content .hero {
     padding-bottom: 110px; /* lisää tilaa pallolle alhaalta */
   }
-
   .pallo {
     width: 56px;            /* pienempi pallo mobiilissa */
     bottom: 6px;           /* hieman lähemmäs hero-alareunaa */
@@ -176,4 +204,5 @@ fieldset{margin: 5px 5px 10px 0;}
 .jalkapallo { /*kirjautumisikkunan jalkapallon koko sopivaksi*/
   width: 100px;
   height: auto;
+}
 }
