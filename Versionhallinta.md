@@ -28,6 +28,7 @@
 | 1.41 | 11.11.2025 | Jonas Christiansen | Suodattimet siirretty lomakkeen keskelle pois sidebarista ja korjattu skaalautuvuus. | Suodattimen kentät venytetty skalautumista varten, voidaan palauttaa lyhkäsemmiksi tarvittaessa. |
 | 1.42 | 12.11.2025 | Heidi Hekkala | Footerin värit + kirjautumislomakkeen jalkapallon koko korjattu + lomakkeen muotoilua siistitty | - |
 | 1.43 | 12.11.2025 | Heidi Hekkala | Ankkuri-linkitys navigaatioon, ohjaa suoraan etusivun turnauslistaus -kohtaan | Turnauslistauksen pohjan toteutus vielä vaiheessa |
+| 1.44 | 12.11.2025 | Heidi Hekkala | Korjattu näppäilyvirhe CSS-tiedostossa | - |
 
 ---
 
