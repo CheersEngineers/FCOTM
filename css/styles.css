@@ -167,7 +167,7 @@ fieldset{margin: 5px 5px 10px 0;}
   .sidebar{order:2;margin-left: 0;}
   .content{order:1}
   .content .filters .filters-grid { grid-template-columns: 1fr; }
-  .content .filters .filters-grid label {flex-direction: column; align-items: stretch;
+  .content .filters .filters-grid label {flex-direction: column; align-items: stretch;}
 }
 
 @media (max-width: 720px) {
@@ -211,5 +211,3 @@ fieldset{margin: 5px 5px 10px 0;}
 }
 
 .avatar-responsive{ width:15vw; max-width:100px; height:auto; aspect-ratio:1/1; border-radius:50%; object-fit:cover; }
-
-}
