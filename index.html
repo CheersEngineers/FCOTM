@@ -139,60 +139,119 @@
                     </div>
                 </form>
             </section>
-            
+
             <!-- Turnauslistaus taulukko -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Turnaus</th>
-                        <th>Ajankohta</th>
-                        <th>Sijainti</th>
-                        <th>Lisätietoja</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>MarrasCup</td>
-                        <td>28.-30.11.2025</td>
-                        <td>Helsinki</td>
-                        <td><a href="#">ilmoittautuminen</td>
-                    </tr>
-                    <tr>
-                        <td>Jalakapallo-Peijjaiset</td>
-                        <td>5.-7.12.2025</td>
-                        <td>Kuopio</td>
-                        <td><a href="#">ilmoittautuminen</td>
-                    </tr>
-                    <tr>
-                        <td>Jouluturnaus</td>
-                        <td>13.-14.12.2025</td>
-                        <td>Jyväskylä</td>
-                        <td><a href="#">ilmoittautuminen</td>
-                    </tr>
-                    <tr>
-                        <td>Uudenvuodenturnaus</td>
-                        <td>3.-4.1.2026</td>
-                        <td>Tampere</td>
-                        <td><a href="#">ilmoittautuminen</td>
-                    </tr>
-                    <tr>
-                        <td>Talviturnaus</td>
-                        <td>24.-25.1.2026</td>
-                        <td>Lahti</td>
-                        <td><a href="#">ilmoittautuminen</td>
-                    </tr>
-                    <tr>
-                        <td>Kokkola Cup</td>
-                        <td>16.-19.7.2026</td>
-                        <td>Kokkola</td>
-                        <td><a href="#">ilmoittautuminen</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrap">
+                <div class="table-scroll">
+                    <table class="table-clean" aria-label="Turnauslistaus">
+                    <caption class="visually-hidden">Turnauslistaus</caption>
+                    <thead>
+                        <tr>
+                        <th scope="col">Turnaus</th>
+                        <th scope="col">Ajankohta</th>
+                        <th scope="col">Sijainti</th>
+                        <th scope="col">Taso</th>
+                        <th scope="col">Toiminnot</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">MarrasCup</td>
+                        <td class="muted" data-label="Ajankohta">28.–30.11.2025</td>
+                        <td data-label="Sijainti">Helsinki</td>
+                        <td data-label="Taso"><span class="badge">Avoin</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso MarrasCup">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu MarrasCup">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Jalakapallo-Peijjaiset</td>
+                        <td class="muted" data-label="Ajankohta">5.–7.12.2025</td>
+                        <td data-label="Sijainti">Kuopio</td>
+                        <td data-label="Taso"><span class="badge">Kutsuttava</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Jalakapallo-Peijjaiset">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Jalakapallo-Peijjaiset">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Jouluturnaus</td>
+                        <td class="muted" data-label="Ajankohta">13.–14.12.2025</td>
+                        <td data-label="Sijainti">Jyväskylä</td>
+                        <td data-label="Taso"><span class="badge">Avoin</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Jouluturnaus">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Jouluturnaus">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Uudenvuodenturnaus</td>
+                        <td class="muted" data-label="Ajankohta">3.–4.1.2026</td>
+                        <td data-label="Sijainti">Tampere</td>
+                        <td data-label="Taso"><span class="badge">Avoin</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Uudenvuodenturnaus">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Uudenvuodenturnaus">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Talviturnaus</td>
+                        <td class="muted" data-label="Ajankohta">24.–25.1.2026</td>
+                        <td data-label="Sijainti">Lahti</td>
+                        <td data-label="Taso"><span class="badge">Harraste</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Talviturnaus">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Talviturnaus">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Kokkola Cup</td>
+                        <td class="muted" data-label="Ajankohta">16.–19.7.2026</td>
+                        <td data-label="Sijainti">Kokkola</td>
+                        <td data-label="Taso"><span class="badge">Kilpa</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Kokkola Cup">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Kokkola Cup">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Kevätturnee</td>
+                        <td class="muted" data-label="Ajankohta">20.–22.4.2026</td>
+                        <td data-label="Sijainti">Oulu</td>
+                        <td data-label="Taso"><span class="badge">Avoin</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Kevätturnee">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Kevätturnee">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="row-title" data-label="Turnaus">Kesäfest Cup</td>
+                        <td class="muted" data-label="Ajankohta">2.–5.6.2026</td>
+                        <td data-label="Sijainti">Porvoo</td>
+                        <td data-label="Taso"><span class="badge">Kutsuttava</span></td>
+                        <td class="row-actions" data-label="Toiminnot">
+                            <a class="btn ghost" href="#" aria-label="Katso Kesäfest Cup">Katso</a>
+                            <a class="btn" href="#" aria-label="Ilmoittaudu Kesäfest Cup">Ilmoittaudu</a>
+                        </td>
+                        </tr>
+
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
 
             <!-- Hakutulokset -->
             <section class="cards-grid">
-                <article class="card" id="turnauslistaus">
+                <article class="card" id="Turnauslistaus">
                     <h3>Hakutulokset</h3>
                     <input id="searchInput" class="search" placeholder="Hae turnauksia..." />
                     <div id="searchResults" class="results">Hakutulokset näkyvät tässä.</div>
