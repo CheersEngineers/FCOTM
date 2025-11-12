@@ -29,6 +29,7 @@
 | 1.42 | 12.11.2025 | Heidi Hekkala | Footerin värit + kirjautumislomakkeen jalkapallon koko korjattu + lomakkeen muotoilua siistitty | - |
 | 1.43 | 12.11.2025 | Heidi Hekkala | Ankkuri-linkitys navigaatioon, ohjaa suoraan etusivun turnauslistaus -kohtaan | Turnauslistauksen pohjan toteutus vielä vaiheessa |
 | 1.44 | 12.11.2025 | Heidi Hekkala | Korjattu näppäilyvirhe CSS-tiedostossa | - |
+| 1.45 | 12.11.2025 | Jonas Christiansen | Saatavilla olevat turnaukset (taulukko etusivulle) | - |
 
 ---
 

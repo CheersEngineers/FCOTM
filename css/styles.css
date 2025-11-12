@@ -50,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {font-family: "Finlandica", sans-serif;}
   padding-bottom: 120px;     /* varaa tilaa pallolle tekstin alapuolelle; säädä tarvittaessa */
 }
 
+/* Turnauslistaus */
+table {border-collapse: collapse; margin-top: 10px;}
+td, th {border: 1px solid black;text-align: left;padding: 8px;}
+
 /* Keskitetyt suodattimet content-alueella */
 .content .filters { margin: var(--gap) 0 16px 0; display:block; }
 .content .filters .filters-grid {
